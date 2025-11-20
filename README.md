@@ -90,16 +90,16 @@ src/main/java/com/demo
 3. 密碼使用 BCrypt 雜湊
 4. 寫入資料庫
 5. 寄送註冊成功 Email
-6. 回傳成功 JSON 給前端
+6. 回傳成功 JSON 給前端  
 ✔️ 5.2 登入流程  
 1. 使用者輸入帳號或 Email
 2. 從 DB 找會員
 3. 使用 BCrypt matches() 比對密碼
-4. 回傳 MemberResponse
+4. 回傳 MemberResponse  
 ✔️ 5.3 書籍查詢流程  
 /api/books
 /api/books/{id}
-/api/books/search?keyword=xxx
+/api/books/search?keyword=xxx  
 ✔️ 5.4 建立訂單流程  
 1. 檢查會員存在
 2. 檢查付款方式存在
@@ -111,7 +111,7 @@ src/main/java/com/demo
 8. 庫存扣除（Book.StockQty -= 購買數量）
 9. 建立 OrderAmount
 10. 回傳訂單資訊 JSON
-✔️  5.5 查詢訂單列表  
+✔️  5.5 查詢訂單列表    
 GET /api/orders/member/{memberId}
 
 OrderSummaryResponse：
@@ -120,7 +120,7 @@ OrderSummaryResponse：
 - 付款方式
 - 小計
 - 總金額
-- 明細數量
+- 明細數量  
 ✔️  5.6 查詢單一訂單明細  
 GET /api/orders/{orderId}
 
