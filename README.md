@@ -83,24 +83,24 @@ src/main/java/com/demo
 
 ```
 
-## 📌 6. 功能流程
-✔️ 6.1 會員註冊流程
+## 📌  5. 功能流程
+✔️ 5.1 會員註冊流程  
 1. Controller 接收 JSON
 2. DTO 驗證（帳號/Email/手機不可重複、密碼正規化）
 3. 密碼使用 BCrypt 雜湊
 4. 寫入資料庫
 5. 寄送註冊成功 Email
 6. 回傳成功 JSON 給前端
-✔️ 6.2 登入流程
+✔️ 5.2 登入流程  
 1. 使用者輸入帳號或 Email
 2. 從 DB 找會員
 3. 使用 BCrypt matches() 比對密碼
 4. 回傳 MemberResponse
-✔️ 6.3 書籍查詢流程
+✔️ 5.3 書籍查詢流程  
 /api/books
 /api/books/{id}
 /api/books/search?keyword=xxx
-✔️ 6.4 建立訂單流程
+✔️ 5.4 建立訂單流程  
 1. 檢查會員存在
 2. 檢查付款方式存在
 3. 檢查每本書是否存在、庫存足夠
@@ -111,7 +111,7 @@ src/main/java/com/demo
 8. 庫存扣除（Book.StockQty -= 購買數量）
 9. 建立 OrderAmount
 10. 回傳訂單資訊 JSON
-✔️ 6.5 查詢訂單列表
+✔️  5.5 查詢訂單列表  
 GET /api/orders/member/{memberId}
 
 OrderSummaryResponse：
@@ -121,7 +121,7 @@ OrderSummaryResponse：
 - 小計
 - 總金額
 - 明細數量
-✔️ 6.6 查詢單一訂單明細
+✔️  5.6 查詢單一訂單明細  
 GET /api/orders/{orderId}
 
 OrderDetailViewResponse：
@@ -130,7 +130,7 @@ OrderDetailViewResponse：
 - 明細列表（書名 / 價格 / 數量）
 
 
-📌 7. API 一覽表
+📌  6. API 一覽表
 | Method | URL                            | 說明   |
 | ------ | ------------------------------ | ---- |
 | GET    | `/api/books`                   | 全部書籍 |
@@ -156,7 +156,7 @@ OrderDetailViewResponse：
 | GET    | `/api/orders/member/{memberId}` | 會員訂單列表 |
 | GET    | `/api/orders/{orderId}`         | 單一訂單明細 |
 
-📌 8. Eclipse 開發步驟
+📌 7. Eclipse 開發步驟
 1. 建立 Spring Boot 專案
 2. 加入依賴：web, jpa, validation, mail, mysql-connector-j, security
 3. 建立 application.properties 設定 DB / Mail
