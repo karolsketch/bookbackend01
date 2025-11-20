@@ -152,7 +152,7 @@ OrderDetailViewResponse：
 | GET    | `/api/orders/member/{memberId}` | 會員訂單列表 |
 | GET    | `/api/orders/{orderId}`         | 單一訂單明細 |
 
-📌 8. Eclipse 開發步驟（從零開始）
+📌 8. Eclipse 開發步驟
 1. 建立 Spring Boot 專案
 2. 加入依賴：web, jpa, validation, mail, mysql-connector-j, security
 3. 建立 application.properties 設定 DB / Mail
