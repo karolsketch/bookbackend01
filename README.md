@@ -36,6 +36,7 @@ Entity（資料表對應模型）
 
 DTO（資料傳輸物件：Request / Response）
 ---
+```text
 📌 4. 專案資料夾結構
 src/main/java/com/demo
 ├── Bookbackend01Application.java     # Spring Boot 啟動主程式
@@ -79,6 +80,9 @@ src/main/java/com/demo
 │
 └── config                            # Config 設定
     └── SecurityConfig.java           # PasswordEncoder 設定
+
+```
+
 ## 📌 6. 功能流程
 ✔️ 6.1 會員註冊流程
 1. Controller 接收 JSON
